@@ -4,11 +4,10 @@ import yaml
 from mlflowproject import logger
 import json
 import joblib
-from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
-
+from beartype import beartype as ensure_annotations
 
 
 @ensure_annotations
